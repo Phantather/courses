@@ -1,0 +1,58 @@
+.post {
+  padding: 120px 0 180px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__btn {
+    width: 158px;
+    height: 52px;
+  }
+  &__row {
+    display: flex;
+    column-gap: 30px;
+  }
+  &__card {
+    position: relative;
+    width: calc(33.33333% - 20px);
+    margin-top: 60px;
+    &-icon {
+      @include text (normal, 14px, 150%, $grey);
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #FFFFFF;
+      border-radius: 4px;
+      padding: 3px 5px;
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
+    img {
+      width: 100%;
+    }
+    &-time {
+      display: flex;
+      column-gap: 12px;
+      align-items: center;
+      margin: 16px 0 8px;
+    }
+    &-text {
+      @include text (bold, 14px, 150%, #787A80);
+    }
+    &-title {
+      @include text (bold, 20px, 150%, $blue);
+    }
+    &-descr {
+      @include text (nomral, 16px, 160%, $grey);
+      margin: 8px 0 16px;
+    }
+    &-link {
+      @include text (bold, 16px, 160%, $blue);
+      display: flex;
+      column-gap: 11px;
+      align-items: center;
+    }
+  }
+}

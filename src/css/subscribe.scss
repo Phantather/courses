@@ -1,0 +1,45 @@
+.subscribe{
+  padding: 120px 0 180px;
+  background: linear-gradient(55.95deg, #FF3F3A20 0%, #F75E0520 100%);
+  position: relative;
+  &__content{
+    text-align: center;
+  }
+  &__form{
+    margin-top: 60px;
+    &-input{
+      width: 422px;
+      height: 52px;
+      padding-left: 16px;
+      border: 1px solid #D7DADD;
+      border-radius: 4px;
+      margin-right: 24px;
+      &::placeholder{
+        @include text(normal, 16px, 160%,  #9A9CA5);
+
+      }
+    }
+    &-btn{
+      width: 154px;
+      height: 52px;
+      border-radius: 4px;
+    }
+  }
+  //&__img-left{
+  //  position: absolute;
+  //  left: 0;
+  //  bottom: 0;
+  //  img{
+  //    width: 70%;
+  //  }
+  //}
+  //&__img-right{
+  //  position: absolute;
+  //  right: 0;
+  //  bottom: 0;
+  //  transform: translateX(31%);
+  //  img{
+  //    width: 70%;
+  //  }
+  //}
+}
